@@ -4,6 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
+    # Fix: se define 'nombre' para evitar NameError (Error 500)
     nombre = "Estudiante"
     return f"<h1>Bienvenido al portal universitario, {nombre}!</h1>"
 
